@@ -1,0 +1,75 @@
+.benefits {
+  min-height: 430px;
+  padding: 0 0 40px 0;
+
+  &__items {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+  }
+
+  &__item {
+    max-width: 277px;
+    min-width: 230px;
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 18px;
+
+    img {
+      display: block;
+      margin: 0 auto;
+    }
+    &-animated{
+      animation-name: heartbeat;
+      animation-duration: 0.5s;
+      animation-delay: 2s;
+      animation-iteration-count: infinite;
+      animation-timing-function: ease;
+      &:hover{
+        animation-play-state: paused;
+      }
+    }
+    h6 {
+      font-weight: 700;
+      font-size: 18px;
+      line-height: 29px;
+      color: #0D0D0D;
+      text-align: center;
+      margin: 35px 0 20px 0;
+    }
+    a {
+      color: #FF0000;
+    }
+    a:hover{
+      color: $button-hover;
+    }
+  }
+}
+@media (max-width: 767px){
+    .benefits{
+      &__items{
+        flex-direction: column;
+        gap: 30px;
+        align-items: center;
+      }
+      &__item{
+        max-width: 300px;
+      }
+    }
+}
+@media (max-width: 480px){
+  .benefits{
+    .title {
+      font-size: 26px;
+      margin: 40px 0 30px 0;
+    }
+    &__items{
+      gap: 25px;
+    }
+    &__item{
+      h6 {
+        margin: 15px 0 15px 0;
+      }
+    }
+  }
+}

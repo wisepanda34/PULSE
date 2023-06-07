@@ -1,0 +1,71 @@
+.carousel {
+  max-height: 740px;
+  padding: 5% 0;
+
+  &__slider {
+    max-width: 900px;
+    position: relative;
+    //z-index: -1 !important;
+  }
+
+  &__wrapper {
+    width: 80%;
+    align-items: center;
+  }
+
+  &__slide {
+    min-height: 300px;
+    transition: 0.3s;
+
+    img {
+      display: block;
+      margin: 0 auto;
+      max-width: 100%;
+      object-fit: cover;
+    }
+  }
+
+  .swiper-button-prev::after,
+  .swiper-button-next::after {
+    display: none;
+  }
+  .swiper-button-prev{
+
+    width: 30px;
+    height: 50px;
+    z-index: 100;
+    cursor: pointer;
+  }
+  .swiper-button-next {
+    position: absolute;
+    z-index: 10;
+  }
+  .swiper-pagination {
+    display: none;
+  }
+}
+
+@media (max-width: 992px) {
+  .carousel {
+    .swiper-button-prev,
+    .swiper-button-next {
+      display: none;
+    }
+
+    .swiper-pagination {
+      display: block;
+      position: relative;
+      margin-top: 10px;
+    }
+
+    .swiper-pagination-bullet {
+      width: 20px;
+      height: 20px;
+      background-color: $button-color;
+    }
+
+    .swiper-pagination-bullet-active {
+    }
+  }
+}
+

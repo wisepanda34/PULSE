@@ -1,0 +1,68 @@
+.title {
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 1.5;
+  text-align: center;
+  text-transform: uppercase;
+  color: #0D0D0D;
+  margin: 70px 0 60px 0;
+
+  &_promo {
+    font-size: 42px;
+    text-align: right;
+    color: #FFFFFF;
+    margin: 0;
+  }
+
+  &_subtitle {
+    font-weight: 500;
+    font-size: 24px;
+    text-align: right;
+    color: #FFFFFF;
+    margin: 0;
+  }
+
+  &_consultation {
+    max-width: 790px;
+    font-size: 36px;
+    line-height: 1.5;
+    text-align: left;
+    margin: 0 0 20px 0;
+    color: #FFFFFF;
+  }
+
+  &_catalog {
+    font-weight: 400;
+  }
+}
+
+@media (max-width: 768px) {
+  .title {
+    font-size: 24px;
+
+    &_promo {
+      font-size: 32px;
+    }
+
+    &_subtitle {
+      font-size: 18px;
+    }
+
+    &_consultation {
+      max-width: 650px;
+      font-size: 26px;
+    }
+    &_reviews{
+      margin: 40px 0 30px 0;
+    }
+  }
+}
+
+@media (max-width: 480px) {
+  .title {
+    text-align: center;
+    &_subtitle{
+      margin-top: 10px;
+    }
+  }
+}
